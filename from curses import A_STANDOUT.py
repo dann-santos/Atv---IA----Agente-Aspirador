@@ -1,5 +1,4 @@
 from curses import A_STANDOUT
-from msilib.schema import Environment
 import random
 
 
@@ -47,7 +46,7 @@ def is_goal_achieved(environment):
         return True
     
 class Agent:
-    def __init__(self):
+    def _init_(self):
         self.location = "A"
         self.bag_capacity = 10
         self.bag_is_full = False
